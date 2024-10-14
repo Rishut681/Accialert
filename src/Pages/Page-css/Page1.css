@@ -1,7 +1,38 @@
-.feed {
-    border: #000000 solid 1px;
+.page-container {
+    display: flex;
     height: 100vh;
     width: 100vw;
+    background-color: #06121a; /* Set the background color for the entire page */
+  }
+
+  .navbarP1-container {
+    height: 100vh;
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .nav-head {
+    font-size: 32px;
+    color: white;
+    width: 90%;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+
+  .navbarP1 {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+.feed {
+    border-left: #ffffff solid 1px;
+    height: 100vh;
+    width: 86%;
     background-color: #06121a;
 }
 

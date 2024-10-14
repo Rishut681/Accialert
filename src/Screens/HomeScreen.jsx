@@ -58,8 +58,8 @@ function HomeScreen() {
             <div className="complaint-sec">
                   <div class="card">
                     <div class="banner">
-                      <span class="banner-text">complaint</span>
-                      <span class="banner-text">Let's Know</span>
+                      {/* <span class="banner-text">complaint</span>
+                      <span class="banner-text">Let's Know</span> */}
                     </div>
                     <span class="card__title">Problem</span>
                     <p class="card__subtitle">Have any issue to address<br></br>Let's Know</p>
