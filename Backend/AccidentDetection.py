@@ -8,6 +8,7 @@ import json
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 import datetime
+# from send_sms import send_sms  # Import the SMS function from send_sms.py
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -75,7 +76,7 @@ def generate_frames():
         return
     
     cap = cv2.VideoCapture(video_source)
-    frame_skip = 6  # Skip every 2nd frame to increase speed
+    frame_skip = 5  # Skip every 2nd frame to increase speed
     frame_count = 0
     fps = cap.get(cv2.CAP_PROP_FPS)
     
@@ -199,6 +200,7 @@ def get_accident_statistics():
     return jsonify(accident_statistics)
 
 @app.route('/reports')
+
 def get_recent_reports():
     # List all report PDF files
     reports = [f for f in os.listdir(report_output_dir) if f.endswith('.pdf')]
