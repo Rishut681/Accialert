@@ -8,7 +8,6 @@ import json
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 import datetime
-# from send_sms import send_sms  # Import the SMS function from send_sms.py
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
